@@ -1,5 +1,5 @@
 1. Install React Locally
-Install Node.js and npm:
+Install Node.js and npm: 
 
 Download and install Node.js from https://nodejs.org/.
 Verify installation:
