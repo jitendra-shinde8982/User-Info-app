@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.icon_input {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M15.3089 16L9.19436 9.88546C8.7061 10.3011 8.1446 10.6229 7.50986 10.8507C6.87512 11.0786 6.23724 11.1925 5.59624 11.1925C4.03217 11.1925 2.70845 10.6511 1.62508 9.56831C0.541694 8.48552 0 7.16252 0 5.5993C0 4.03608 0.541393 2.71205 1.62418 1.62723C2.70696 0.542411 4.02997 0 5.59319 0C7.15642 0 8.48044 0.541687 9.56524 1.62506C10.6501 2.70843 11.1925 4.03216 11.1925 5.59625C11.1925 6.2748 11.0723 6.93145 10.8319 7.56619C10.5915 8.20093 10.2761 8.74366 9.88545 9.19438L16 15.3089L15.3089 16ZM5.59624 10.216C6.89202 10.216 7.98591 9.76996 8.87792 8.87793C9.76994 7.98591 10.216 6.89201 10.216 5.59625C10.216 4.30048 9.76994 3.20658 8.87792 2.31456C7.98591 1.42254 6.89202 0.976525 5.59624 0.976525C4.30047 0.976525 3.20658 1.42254 2.31456 2.31456C1.42255 3.20658 0.976548 4.30048 0.976548 5.59625C0.976548 6.89201 1.42255 7.98591 2.31456 8.87793C3.20658 9.76996 4.30047 10.216 5.59624 10.216Z' fill='%23D9D9D9'/%3E%3C/svg%3E")
+    no-repeat center;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-color: #fff;
+  background-size: 20px;
+}
+input::placeholder {
+  padding-left: 5px;
+  color: #d9d9d9;
+}
+input:focus {
+  border: 1px solid #0063ae;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-btn {
+  background-color: #0063ae;
+}
+.card-bg {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 100%;
+}
+.card-mainBg {
+  background: #F1F9FF;
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-name {
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+}
+.col-email {
+  color: #929292;
+  font-size: 16px;
+}
+.card-bg:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* loder css */
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.loading {
+  --speed-of-animation: 0.9s;
+  --gap: 6px;
+  --first-color: #4c86f9;
+  --second-color: #49a84c;
+  --third-color: #f6bb02;
+  --fourth-color: #f6bb02;
+  --fifth-color: #2196f3;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  align-items: center;
+  width: 100px;
+  gap: 6px;
+  height: 100px;
+  margin-top: 30px;
+ }
+ 
+ .loading span {
+  width: 4px;
+  height: 50px;
+  background: var(--first-color);
+  animation: scale var(--speed-of-animation) ease-in-out infinite;
+ }
+ 
+ .loading span:nth-child(2) {
+  background: var(--second-color);
+  animation-delay: -0.8s;
+ }
+ 
+ .loading span:nth-child(3) {
+  background: var(--third-color);
+  animation-delay: -0.7s;
+ }
+ 
+ .loading span:nth-child(4) {
+  background: var(--fourth-color);
+  animation-delay: -0.6s;
+ }
+ 
+ .loading span:nth-child(5) {
+  background: var(--fifth-color);
+  animation-delay: -0.5s;
+ }
+ 
+ @keyframes scale {
+  0%, 40%, 100% {
+   transform: scaleY(0.05);
   }
-  to {
-    transform: rotate(360deg);
+ 
+  20% {
+   transform: scaleY(1);
+  }
+ }
+
+@media screen and (max-width: 600px) {
+  .w100Resp{
+    width: 100%;
+  }
+  .w58Resp{
+    width: 58%;
+  }
+  .p85Resp{
+     padding: 8px 5px;
+  }
+  .txt-wrap{
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
