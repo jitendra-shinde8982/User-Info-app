@@ -12,7 +12,7 @@ import logo from "./images/main_logo.png";
 import noData from "./images/no_data.png";
 import userIcon from "./images/user_icon.png";
 import emailIcon from "./images/email_icon.png";
-import mobIocn from "./images/mobile_icon.png"
+import mobIcon from "./images/mobile_icon.png"
 import webIcon from "./images/website.png"
 import addressIocn from "./images/loction.png"
 import companyIcon from "./images/company.png"
@@ -195,31 +195,31 @@ function UserDetail() {
        </div>
        <div className="flex align-middle p-1.5">
           <div className="flex justify-center w-10">
-              <img src={userIcon}></img>
+              <img src={emailIcon}></img>
           </div>
           <p>Email Id :- {user.email}</p>
        </div>
        <div className="flex align-middle p-1.5">
           <div className="flex justify-center w-10">
-              <img src={userIcon}></img>
+              <img src={mobIcon}></img>
           </div>
           <p>Mobile no :- {user.phone}</p>
        </div>
        <div className="flex align-middle p-1.5">
           <div className="flex justify-center w-10">
-              <img src={userIcon}></img>
+              <img src={webIcon}></img>
           </div>
           <p>Website :- {user.website}</p>
        </div>
        <div className="flex align-middle p-1.5">
           <div className="flex justify-center w-10">
-              <img src={userIcon}></img>
+              <img src={addressIocn}></img>
           </div>
           <p className="txt-wrap" title={`${user.address.suite}, ${user.address.street}, ${user.address.city}, ${user.address.zipcode}`}>Address :- {`${user.address.suite}, ${user.address.street}, ${user.address.city}, ${user.address.zipcode}`}</p>
        </div>
        <div className="flex align-middle p-1.5 mb-4	">
           <div className="flex justify-center w-10">
-              <img src={userIcon}></img>
+              <img src={companyIcon}></img>
           </div>
           <p>Company :- {user.company.name}</p>
        </div>
